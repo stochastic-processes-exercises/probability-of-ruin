@@ -6,7 +6,7 @@ Importantly there is a difference between the gambler and the 1D random walk, ho
 
 The amount of money that the gambler has is an example of a stochastic process.  A stochastic process is for want of a better description a time-dependent random variable. Furthermore, the amount of money the gambler has is an example of a special kind of stochastic process that is known as a Markov chain.  We can thus illustrate the behaviour of the stochastic process by using a diagram similar to the one below:
 
-![](gambler.pdf)
+![](gambler.png)
 
 The circles here represent the various numbers of pounds the gambler might have.  The arrows meanwhile show the amounts of money that the gambler might have after each gamble.  As you can see the nodes in the centre of the chain are connected to the adjacent nodes as on each game he will either loose or win one pound.  Importantly, however, the nodes at the two ends of the chain are only connected to themselves.  These nodes are this way because once the gambler has zero or N pounds he will no longer play (N is founr in this figure).  The amount of money he owns will thus cease to change.
 
