@@ -8,7 +8,7 @@ The amount of money that the gambler has is an example of a stochastic process. 
 
 ![](gambler.png)
 
-The circles here represent the various numbers of pounds the gambler might have.  The arrows meanwhile show the amounts of money that the gambler might have after each gamble.  As you can see the nodes in the centre of the chain (nodes 1, 2 and 3) are connected to the adjacent nodes as on each game he will either loose or win one pound.  Importantly, however, the nodes at the two ends of the chain are only connected to themselves.  These nodes are this way because once the gambler has zero or N pounds he will no longer play (N is founr in this figure).  The amount of money he owns will thus cease to change.
+The circles here represent the various numbers of pounds the gambler might have.  The arrows meanwhile show the amounts of money that the gambler might have after each gamble.  As you can see the nodes in the centre of the chain (nodes 1, 2 and 3) are connected to the adjacent nodes as on each game he will either loose or win one pound.  Importantly, however, the nodes at the two ends of the chain are only connected to themselves.  These nodes are this way because once the gambler has zero or N pounds he will no longer play (N is four in this figure).  The amount of money he owns will thus cease to change.
 
 A question that might be of interest is whether the gambler leaves the casino with zero pounds or whether he leaves with N pounds.  We can answer this question by running a simulation of the gambler.  Essentially we start the gambler with `s` pounds and simulate the process of him playing the game only stopping once he has zero  or `n` pounds.  We can then set a random variable equal to 1 if he has 0 pounds and 1 if he has `n` pounds.
 
