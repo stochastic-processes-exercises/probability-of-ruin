@@ -15,10 +15,10 @@ class UnitTests(unittest.TestCase) :
     def test_gambler(self) : 
         inputs, variables = [], []
         for s in range(1,4) : 
-            for n in range(5,9) :
+            for n in range(6,9) :
                 for i in range(1,5) :
                     p = i*0.2
-                    rat = p / (1 - p)
+                    rat = (1-p)/p
                     prob = ( rat**s - rat**n ) / ( 1 - rat**n )
                     inputs.append((s,n,p,))
                     myvar = randomvar( prob, variance=prob*(1-prob), vmin=0, vmax=1, isinteger=True )
